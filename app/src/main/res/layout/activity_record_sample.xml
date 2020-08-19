@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollViewRecording"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/root_layout_padding_bottom"
+    android:paddingTop="@dimen/root_layout_padding_top"
+    android:layout_margin="8dp">
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_margin="20dp">-->
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top|center">
+
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_microphone_foreground"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_info"
+            android:id="@+id/tv_heading"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_info"
+            android:id="@+id/tv_instruction"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_info"
+            android:id="@+id/tv_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/btnStart"
+                android:text="@string/start_recording"
+                android:layout_weight="1.0"/>
+<!--                app:backgroundTint="@color/colorPrimary"-->
+<!--                android:textColor="@color/white"/>-->
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/btnStop"
+                android:text="@string/stop_recording"
+                android:layout_weight="1.0"/>
+<!--                app:backgroundTint="@color/colorPrimary"-->
+<!--                android:textColor="@color/white"-->
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gender_text_view"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_gender" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/genderAnswer1_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+                <RadioButton
+                    android:id="@+id/genderAnswer2_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/genderAnswer3_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_DOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/age_text_view"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_age" />
+
+            <DatePicker
+                android:id="@+id/datePickerDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+                android:id="@+id/linear_layout_question_origin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/question_origin_text_view"
+                    style="@style/QuestionsStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_origin" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer1_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="White" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer2_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chinese" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer3_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer4_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="South Asian" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer5_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="East Asian" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer6_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Southeast Asian" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer7_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Middle Eastern" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer8_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latin American" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer9_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aboriginal" />
+
+                <CheckBox
+                    android:id="@+id/question_origin_Answer10_checkbox"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other" />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/language_text_view"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_language" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/languageAnswer1_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nativa" />
+
+                <RadioButton
+                    android:id="@+id/languageAnswer2_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fluent" />
+
+                <RadioButton
+                    android:id="@+id/languageAnswer3_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intermediate" />
+
+                <RadioButton
+                    android:id="@+id/languageAnswer4_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beginner" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/education_text_view"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_education" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/educationAnswer1_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University - Doctoral Degree" />
+
+                <RadioButton
+                    android:id="@+id/educationAnswer2_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University - Master's Degree" />
+
+                <RadioButton
+                    android:id="@+id/educationAnswer3_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="University - Undergraduate Degree" />
+
+                <RadioButton
+                    android:id="@+id/educationAnswer4_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="College" />
+
+                <RadioButton
+                    android:id="@+id/educationAnswer5_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="High school" />
+
+                <RadioButton
+                    android:id="@+id/educationAnswer6_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elementary school" />
+
+                <RadioButton
+                    android:id="@+id/educationAnswer7_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="None" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_depression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/depression_text_view"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_depression" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_depression"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/depressionAnswer1_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/depressionAnswer2_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_medication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/medication_text_view"
+                style="@style/QuestionsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_medication" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_medication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/medicationAnswer1_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/medicationAnswer2_radio"
+                    style="@style/AnswersStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_button"
+            android:layout_marginTop="20dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btnSubmit"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
